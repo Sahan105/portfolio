@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+    list-style-type: none;
+}
+/* Navbar section */
+#navbar {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f14f4f;
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+}
+#navbar ul{
+display: flex;
+justify-content: flex-end;
+padding: 1%;
+width: 100%;
+}
+#navbar ul li a{
+margin: 1.2rem;
+text-decoration: none;
+font-size: 1.5rem;
+color: #fff;
+padding: 13px 12px;
+}
+#navbar ul li a:hover{
+background-color: #fff;
+color: #000;
+transition: 2 ease-in;
+}
+/* Welcome section */
+#about{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    padding: 10%;
+    font-family: 'Roboto-bold', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+.profile-cap{
+    padding: 0 15%;
+}
+.profile-img{
+  position: relative;
+  top: -10%;
+}
+/* about's header part */
+.about-header{
+font-family: "Poppins";
+font-size: 5rem;
+margin-bottom: 2%;
+}
+.about-p{
+    font-style: italic;
+    font-size: 2.5rem;
+    color: #868686;
+}
+
+/* project show part */
+#projects{
+    padding:6% 15%;
+    background-color: #478aa5;
+}
+.project-section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   
+}
+.img{
+    height:350px;
+    width: 350px;
+}
+
+.project-tile{
+    font-family: 'Roboto-bold', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 4.5rem;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+     
+}
+.btn{
+    text-align: center;
+    font-family: 'Roboto-bold', sans-serif;
+    font-size: 1.5rem;
+    padding: 1.2% 4%;
+    position: relative;
+    left: 40%;
+    margin: 1rem 0;
+    border-radius: 10%;
+    z-index: 10;
+}
+.btn:hover{
+background-color: #fa5d5d;
+color: #fff;
+}
+figcaption{
+font-family: 'Roboto-bold', sans-serif;
+font-size: 2rem;
+text-align: center;
+padding: 5% 15%;
+}
+/* Contact-section */
+#contact{
+  background-color:#303841;
+   padding: 10% 13%;
+   border-bottom: 3px solid #fa5d5d;
+}
+.contact-header{
+    font-family: 'Roboto-bold', sans-serif;
+    font-size: 5rem;
+    color: #dfdede;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.contact-P{
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+    color: #8b8a8a;
+    font-size: 1.5rem;
+}
+.scl-link{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5% 15%;
+    color: #c0c0c0;
+    font-size: 1.2rem;
+}
+.link-wrap{
+    display: flex;
+    justify-content: space-evenly; 
+    text-shadow: 2px 2px 1px #1f1f1f;
+}
+.id{
+    margin: 3% 0;
+    position: relative;
+    right: 5%;
+}
+.link-wrap:hover{
+    transform: translateY(-8px);
+    transition: transform .8s ease-out;
+}
+/* footer section */
+#footer{
+    background-color: #303841;
+    padding: 5% 5%;
+    display: flex;
+    justify-content: space-evenly;
+    color:#c0c0c0 ;
+    font-family: 'Roboto-bold', sans-serif;
+    font-size: 1.3rem;
+}
+.foot-p{
+    padding: 2% 5%;
+}
+.icon-cls{
+    text-decoration: none;
+    color: #fff;
+}
+.free{
+    position: relative;
+    right: -2%;
+    top: 10%;
+}
+
+@media(max-width:1218px){
+    #navbar ul li a{
+        padding: 12px 14px;
+ 
+   }
+   #about{
+    display: flex;
+    flex-direction: column;
+   }
+   .profile-img{
+       margin-top: 8%;
+   }
+   .project-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
+}
+.img{
+    height:300px;
+    width: 100%;
+  
+}
+.scl-link{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+}
+.link-wrap{
+    margin: 0 2%;
+   
+}
+}
+@media only screen and (max-width: 600px){
+    #navbar ul li a{
+        padding: 4px 5px;
+ 
+   }
+    .profile-img{
+        height:350px;
+        width: 350px;
+      }
+      .about-header{
+        font-size: 3.5rem;
+      }
+      .project-tile{
+        font-size: 3rem;  
+    }
+    .project-section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       
+}
+.contact-header{
+    font-size: 2rem; 
+}
+.scl-link{
+    display: grid;
+        grid-template-columns: repeat(3,1fr);
+}
+.link-wrap{
+    padding: 5%;
+}
+#navbar ul {
+    position: relative;
+    left: -10%;
+    
+}
+}
